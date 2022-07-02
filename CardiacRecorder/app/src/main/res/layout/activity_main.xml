@@ -6,13 +6,111 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <RelativeLayout
+        android:layout_width="220dp"
+        android:layout_height="600dp"
+        android:background="@drawable/shape_left_panel"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.242"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_height="440dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/shape_login_panel"
+        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.242">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CREATE A NEW ACCOUNT"
+            android:textAppearance="@style/Base.CardView"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#1E566C"
+            android:textSize="20sp"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="90.00dp"
+            android:layout_height="90.00dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center"
+            app:civ_border_color="#CCF4BB"
+            app:civ_border_width="2dp"
+            />
+        <EditText
+            android:id="@+id/s1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textSize="20sp"
+            android:inputType="textCapSentences"
+            android:hint=" Enter Your Name "
+            android:drawableLeft="@drawable/identity"
+            android:textColor="@color/black"
+            android:textStyle="italic"/>
+        <EditText
+            android:id="@+id/s2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textSize="20sp"
+            android:inputType="textEmailAddress"
+            android:hint="  Enter Your Email Address"
+            android:drawableLeft="@drawable/email"
+            android:textColor="@color/black"
+            android:textStyle="italic"/>
+        <EditText
+            android:id="@+id/s3"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textSize="20sp"
+            android:inputType="textPassword"
+            android:hint="  Enter Password"
+            android:drawableLeft="@drawable/padlock"
+            android:textColor="@color/black"
+            android:textStyle="italic"/>
+
+        <Button
+            android:id="@+id/s4"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/custombutton"
+            app:backgroundTint="#92FA92"
+            android:paddingTop="10dp"
+            android:layout_gravity="right"
+            android:text="SIGN UP"
+            android:textSize="18sp"
+            android:textColor="#706D6D" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already a member? Sign in"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/s5"
+            android:textColor="#1E566C"
+            android:textSize="20sp"/>
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/s6"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

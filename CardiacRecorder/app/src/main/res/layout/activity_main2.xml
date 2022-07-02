@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <RelativeLayout
+        android:layout_width="220dp"
+        android:layout_height="600dp"
+        android:background="@drawable/shape_right_panel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.244" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_height="400dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/shape_login_panel"
+        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="30dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.242">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to CardiacRecorder"
+            android:textAppearance="@style/Base.CardView"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#1E566C"
+            android:textSize="25sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Already have an Account?"
+            android:textAppearance="@style/Base.CardView"
+            android:gravity="center"
+            android:textStyle="normal"
+            android:textColor="#1E566C"
+            android:textSize="15sp"/>
+        <EditText
+            android:id="@+id/m1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:inputType="textCapSentences"
+            android:hint="  Enter your name"
+            android:drawableLeft="@drawable/identity"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:textAppearance="@style/Base.CardView"
+            android:textCursorDrawable="@null"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:hint="  Enter email address/Phone number "
+            android:textColor="@color/black"
+            android:id="@+id/m2"
+            android:drawableLeft="@drawable/email"
+            android:textStyle="italic"
+            android:textCursorDrawable="@null"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:inputType="textPassword"
+            android:hint="  Enter Password"
+            android:textColor="@color/black"
+            android:id="@+id/m3"
+            android:drawableLeft="@drawable/padlock"
+            android:textStyle="italic"
+            android:textCursorDrawable="@null"
+            android:layout_marginBottom="10sp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/m42"
+                android:layout_width="130dp"
+                android:layout_marginLeft="130dp"
+                android:layout_height="70dp"
+                android:textSize="13sp"
+                android:paddingTop="10dp"
+                android:text="LOG IN "
+                app:backgroundTint="#00D4AA"
+                android:background="@drawable/custombutton"
+                android:textColor="#706D6D" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Are you not registered? Sign up"
+            android:paddingTop="10sp"
+            android:textAppearance="@style/Base.CardView"
+            android:gravity="center"
+            android:id="@+id/m5"
+            android:textColor="#1E566C"
+            android:textSize="18sp"/>
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/m6"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
